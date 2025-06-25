@@ -114,7 +114,7 @@ extension Image {
         }
     }
 
-    return ScrollView(.vertical) {
+    ScrollView(.vertical) {
         VStack(spacing: 40) {
             StylePreviewHeader(title: "KeyboardKit Images")
 
