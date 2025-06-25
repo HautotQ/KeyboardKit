@@ -51,12 +51,12 @@ public extension Color {
 
     /// The standard dark keyboard button foreground color.
     static var keyboardDarkButtonForeground: Self {
-        Color("keyboardButtonForeground")
+        Color(.keyboardButtonForeground)
     }
     
     /// The standard dark keyboard button foreground color for dark apperance.
     static var keyboardDarkButtonForegroundForDarkAppearance: Self {
-        Color("keyboardButtonForegroundForDarkAppearance")
+        Color(.keyboardButtonForegroundForDarkAppearance)
     }
 }
 
@@ -68,7 +68,7 @@ public extension Color {
     static func keyboardBackground(
         for colorScheme: ColorScheme
     ) -> Self {
-        .keyboardBackground
+        Color.keyboardBackground
     }
     
     /// The standard keyboard button background color.
@@ -124,7 +124,7 @@ private extension ColorScheme {
 
 #Preview {
 
-    return ScrollView(.vertical) {
+    ScrollView(.vertical) {
         VStack(spacing: 40) {
             StylePreviewHeader(title: "KeyboardKit Colors")
 
@@ -172,13 +172,13 @@ struct StylePreviewHeader: View {
         VStack {
             Image.keyboardKit
                 .resizable()
-                .aspectRatio(contentMode: .fit)
+                .aspectRatio(contentMode: ContentMode.fit)
                 .frame(height: 100)
             Text(title)
         }
         .padding(20)
         .frame(maxWidth: .infinity)
-        .background(Color.keyboardBackground)
+        .background(Color.keyboardBackground as Color)
         .clipShape(.rect(cornerRadius: 5))
         .shadow(radius: 1, y: 1)
     }
