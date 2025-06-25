@@ -10,8 +10,8 @@ import SwiftUI
 
 public extension Image {
     
-    static let keyboardEmoji = Image(.keyboardEmoji)
-    static let keyboardKit = Image(.keyboardKitIcon)
+    static let keyboardEmoji = Image("keyboardEmoji")
+    static let keyboardKit = Image("keyboardKitIcon")
 
     static let keyboard = symbol("keyboard")
     static let keyboardArrowUp = symbol("arrow.up")
