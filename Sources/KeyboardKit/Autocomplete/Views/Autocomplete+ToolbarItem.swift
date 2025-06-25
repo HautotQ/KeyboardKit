@@ -189,7 +189,7 @@ public extension EnvironmentValues {
         }
     }
 
-    return VStack {
+    VStack {
         Preview(style: .standard)
             .autocompleteToolbarItemStyle(.standard)
         Preview(style: .init(
