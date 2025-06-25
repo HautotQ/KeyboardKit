@@ -5,7 +5,7 @@ public extension Color {
     
     /// The standard keyboard button background color.
     static func keyboardBackground(for context: KeyboardContext) -> Self {
-        .keyboardBackground
+        Color.keyboardBackground
     }
     
     /// The standard keyboard button background color.
