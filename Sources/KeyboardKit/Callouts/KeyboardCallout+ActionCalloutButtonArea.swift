@@ -139,7 +139,7 @@ private extension KeyboardCallout.ActionCallout.ButtonArea {
         }
     }
     .padding()
-    .background(Color.keyboardBackground)
+    .background(Color.keyboardBackground as Color)
     .cornerRadius(20)
     .keyboardCalloutStyle(.standard)
     .padding()
