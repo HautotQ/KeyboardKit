@@ -17,46 +17,46 @@ public extension Color {
     }
 
     /// The standard keyboard background color.
-    static let keyboardBackground = Color(.keyboardBackground)
+    static let keyboardBackground = Color("keyboardBackground")
 
     /// The standard keyboard background color for dark appearance.
-    static let keyboardBackgroundForDarkAppearance = Color(.keyboardBackgroundForDarkAppearance)
+    static let keyboardBackgroundForDarkAppearance = Color("keyboardBackgroundForDarkAppearance")
 
     /// The standard keyboard button background color.
-    static let keyboardButtonBackground = Color(.keyboardButtonBackground)
+    static let keyboardButtonBackground = Color("keyboardButtonBackground")
 
     /// The standard keyboard button background color, adjusted for the iOS color scheme bug.
-    static let keyboardButtonBackgroundForColorSchemeBug = Color(.keyboardButtonBackgroundForColorSchemeBug)
+    static let keyboardButtonBackgroundForColorSchemeBug = Color("keyboardButtonBackgroundForColorSchemeBug")
 
     /// The standard keyboard button background color for dark appearance.
-    static let keyboardButtonBackgroundForDarkAppearance = Color(.keyboardButtonBackgroundForDarkAppearance)
+    static let keyboardButtonBackgroundForDarkAppearance = Color("keyboardButtonBackgroundForDarkAppearance")
 
     /// The standard keyboard button foreground color.
-    static let keyboardButtonForeground = Color(.keyboardButtonForeground)
+    static let keyboardButtonForeground = Color("keyboardButtonForeground")
 
     /// The standard keyboard button foreground color for dark appearance.
-    static let keyboardButtonForegroundForDarkAppearance = Color(.keyboardButtonForegroundForDarkAppearance)
+    static let keyboardButtonForegroundForDarkAppearance = Color("keyboardButtonForegroundForDarkAppearance")
 
     /// The standard keyboard button shadow color.
-    static let keyboardButtonShadow = Color(.keyboardButtonShadow)
+    static let keyboardButtonShadow = Color("keyboardButtonShadow")
 
     /// The standard dark keyboard button background color.
-    static let keyboardDarkButtonBackground = Color(.keyboardDarkButtonBackground)
+    static let keyboardDarkButtonBackground = Color("keyboardDarkButtonBackground")
 
     /// The standard dark keyboard button background color for the iOS color scheme bug.
-    static let keyboardDarkButtonBackgroundForColorSchemeBug = Color(.keyboardDarkButtonBackgroundForColorSchemeBug)
+    static let keyboardDarkButtonBackgroundForColorSchemeBug = Color("keyboardDarkButtonBackgroundForColorSchemeBug")
 
     /// The standard dark keyboard button background color for dark apperance.
-    static let keyboardDarkButtonBackgroundForDarkAppearance = Color(.keyboardDarkButtonBackgroundForDarkAppearance)
+    static let keyboardDarkButtonBackgroundForDarkAppearance = Color("keyboardDarkButtonBackgroundForDarkAppearance")
 
     /// The standard dark keyboard button foreground color.
     static var keyboardDarkButtonForeground: Self {
-        Color(.keyboardButtonForeground)
+        Color("keyboardButtonForeground")
     }
     
     /// The standard dark keyboard button foreground color for dark apperance.
     static var keyboardDarkButtonForegroundForDarkAppearance: Self {
-        Color(.keyboardButtonForegroundForDarkAppearance)
+        Color("keyboardButtonForegroundForDarkAppearance")
     }
 }
 
