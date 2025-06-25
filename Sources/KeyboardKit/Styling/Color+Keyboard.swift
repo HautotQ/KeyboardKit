@@ -122,6 +122,21 @@ private extension ColorScheme {
     }
 }
 
+func preview(for color: Color, _ name: String) -> some View {
+    Button {
+        print(name)
+    } label: {
+        HStack(spacing: 0) {
+            color
+            color.colorScheme(.dark)
+        }
+    }
+    .background(Color.keyboardBackground)
+    .aspectRatio(1, contentMode: .fill)
+    .cornerRadius(10)
+    .shadow(radius: 1, y: 1)
+}
+
 #Preview {
 
     ScrollView(.vertical) {
@@ -146,21 +161,6 @@ private extension ColorScheme {
         }
         .padding()
         .font(.title.weight(.regular))
-    }
-
-    func preview(for color: Color, _ name: String) -> some View {
-        Button {
-            print(name)
-        } label: {
-            HStack(spacing: 0) {
-                color
-                color.colorScheme(.dark)
-            }
-        }
-        .background(Color.keyboardBackground)
-        .aspectRatio(1, contentMode: .fill)
-        .cornerRadius(10)
-        .shadow(radius: 1, y: 1)
     }
 }
 
