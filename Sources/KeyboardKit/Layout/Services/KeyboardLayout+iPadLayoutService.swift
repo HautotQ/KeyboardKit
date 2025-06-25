@@ -167,17 +167,16 @@ extension KeyboardLayout.iPadLayoutService {
     }
 }
 
+func layout() -> KeyboardLayout {
+    KeyboardLayout.iPadLayoutService(
+        alphabeticInputSet: .qwerty,
+        numericInputSet: .numeric(currency: "$"),
+        symbolicInputSet: .symbolic(currencies: [""])
+    )
+    .keyboardLayout(for: .preview)
+}
 
 #Preview {
-    
-    func layout() -> KeyboardLayout {
-        KeyboardLayout.iPadLayoutService(
-            alphabeticInputSet: .qwerty,
-            numericInputSet: .numeric(currency: "$"),
-            symbolicInputSet: .symbolic(currencies: [""])
-        )
-        .keyboardLayout(for: .preview)
-    }
     
     KeyboardView(
         layout: layout(),
