@@ -51,12 +51,12 @@ public extension Color {
 
     /// The standard dark keyboard button foreground color.
     static var keyboardDarkButtonForeground: Self {
-        Color(.keyboardButtonForeground)
+        Color("keyboardButtonForeground")
     }
     
     /// The standard dark keyboard button foreground color for dark apperance.
     static var keyboardDarkButtonForegroundForDarkAppearance: Self {
-        Color(.keyboardButtonForegroundForDarkAppearance)
+        Color("keyboardButtonForegroundForDarkAppearance")
     }
 }
 
