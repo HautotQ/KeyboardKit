@@ -179,7 +179,7 @@ extension KeyboardLayout.iPadLayoutService {
         .keyboardLayout(for: .preview)
     }
     
-    return KeyboardView(
+    KeyboardView(
         layout: layout(),
         actionHandler: .preview,
         styleService: .preview,
