@@ -52,7 +52,7 @@ public extension KeyboardCallout {
             actionItemFont: KeyboardFont? = nil,
             actionItemMaxSize: CGSize? = nil,
             actionItemPadding: CGSize? = nil,
-            backgroundColor: Color = .keyboardButtonBackground,
+            backgroundColor: Color = Color.keyboardButtonBackground,
             borderColor: Color? = nil,
             buttonOverlayCornerRadius: CGFloat? = nil,
             buttonOverlayInset: CGSize? = nil,
