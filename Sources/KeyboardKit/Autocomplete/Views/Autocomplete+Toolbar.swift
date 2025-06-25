@@ -284,7 +284,7 @@ public extension EnvironmentValues {
         .init(text: "💡", type: .emoji),
         .init(text: "👍", type: .emoji)]
     
-    return VStack {
+    VStack {
         Group {
             Autocomplete.Toolbar(
                 suggestions: suggestions,
