@@ -105,5 +105,5 @@ public extension EnvironmentValues {
             )
     }
     .padding()
-    .background(Color.keyboardBackground)
+    .background(Color.keyboardBackground as Color)
 }
