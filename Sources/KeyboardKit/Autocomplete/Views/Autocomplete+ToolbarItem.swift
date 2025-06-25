@@ -167,32 +167,31 @@ public extension EnvironmentValues {
         .ToolbarItemStyle.standard
 }
 
+struct ToolbarItemPreview: View {
 
-#Preview {
+    let style: Autocomplete.ToolbarItemStyle
 
-    struct Preview: View {
+    let suggestions: [Autocomplete.Suggestion] = [
+        .init(text: "Foo", type: .unknown),
+        .init(text: "Bar", type: .autocorrect),
+        .init(text: "", title: "Baz", subtitle: "Recommended")
+    ]
 
-        let style: Autocomplete.ToolbarItemStyle
-
-        let suggestions: [Autocomplete.Suggestion] = [
-            .init(text: "Foo", type: .unknown),
-            .init(text: "Bar", type: .autocorrect),
-            .init(text: "", title: "Baz", subtitle: "Recommended")]
-
-        var body: some View {
-            HStack {
-                ForEach(suggestions, id: \.text) {
-                    Autocomplete.ToolbarItem(suggestion: $0)
-                        .autocompleteToolbarItemStyle($0.isAutocorrect ? .standardAutocorrect : style)
-                }
+    var body: some View {
+        HStack {
+            ForEach(suggestions, id: \.text) {
+                Autocomplete.ToolbarItem(suggestion: $0)
+                    .autocompleteToolbarItemStyle($0.isAutocorrect ? .standardAutocorrect : style)
             }
         }
     }
+}
 
+#Preview {
     VStack {
-        Preview(style: .standard)
+        ToolbarItemPreview(style: .standard)
             .autocompleteToolbarItemStyle(.standard)
-        Preview(style: .init(
+        ToolbarItemPreview(style: .init(
             titleColor: .yellow,
             titleFont: .init(.body, .bold),
             subtitleColor: .yellow.opacity(0.9),
