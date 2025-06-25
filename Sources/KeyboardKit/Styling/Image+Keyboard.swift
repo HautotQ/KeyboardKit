@@ -104,15 +104,15 @@ extension Image {
     }
 }
 
-#Preview {
-    
-    func preview(for image: Image, _ title: String) -> some View {
-        Button {
-            print(title)
-        } label: {
-            image
-        }
+func preview(for image: Image, _ title: String) -> some View {
+    Button {
+        print(title)
+    } label: {
+        image
     }
+}
+
+#Preview {
 
     ScrollView(.vertical) {
         VStack(spacing: 40) {
