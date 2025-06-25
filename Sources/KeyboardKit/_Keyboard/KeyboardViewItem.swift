@@ -213,7 +213,7 @@ private extension KeyboardViewItem {
                 content: Text("Hello, world!")
             )
             .padding()
-            .background(Color.keyboardBackground)
+            .background(Color.keyboardBackground as Color)
             .keyboardButtonStyle { params in
                 var style = params.standardStyle(for: keyboardContext)
                 style.foregroundColor = .yellow
