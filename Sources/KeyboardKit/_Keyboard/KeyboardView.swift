@@ -531,7 +531,7 @@ private extension KeyboardView {
                     toolbar: { $0.view }
                 )
                 .padding(.bottom, 15)
-                .background(Color.keyboardBackground)
+                .background(Color.keyboardBackground as Color)
             }
             .keyboardButtonStyle { params in
                 var style = params.standardStyle(for: keyboardContext)
